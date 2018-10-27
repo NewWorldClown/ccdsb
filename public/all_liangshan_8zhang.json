@@ -1,0 +1,165 @@
+{
+  "liangshan_pdk": 
+  {
+    "describe": "八张跑得快",
+    "gameType": 2,
+    "defaultParams": 
+	{
+      "playerNum": 4
+    },
+	"price":
+	{
+		"round8_LSBZ":0,
+		"round12_LSBZ":0,
+		"round16_LSBZ":0,
+		"round8_LSBZ_AA":0,
+		"round12_LSBZ_AA":0,
+		"round16_LSBZ_AA":0
+	},
+    "selections": {
+      "round": {
+        "name": "局数",
+        "type": 0,
+        "paraName": "round",
+        "components": {
+          "round1": {
+            "name": "8局",
+            "value": "round8_LSBZ",
+            "default": true
+          },
+          "round2": {
+            "name": "12局",
+            "value": "round12_LSBZ",
+            "default": false
+          },
+          "round3": {
+            "name": "16局",
+            "value": "round16_LSBZ",
+            "default": false
+          }
+        }
+      },
+	  "roomType": {
+        "name": "房间类型",
+        "type": 0,
+        "paraName": "AA",
+        "components": {
+          "type1": {
+            "name": "房主开房",
+            "value": false,
+            "default": true
+          },
+          "type2": {
+            "name": "AA开房",
+            "value": true,
+            "default": false
+          }
+        }
+      },
+	  "mode": {
+        "name": "模式",
+        "type": 1,
+        "components": 
+		{
+		  "mode1": {
+            "name": "抢庄",
+            "paraName": "robZhuang",
+            "default": false,
+			"post":true
+          }
+        }
+      },
+	  "robMode": {
+        "name": "抢庄模式",
+        "type": 1,
+		"basedOn":"robZhuang",
+		"basedValue":true,
+        "components": 
+		{
+		  "mode": {
+            "name": "庄家最后抢",
+            "paraName": "lastRobZhuang",
+            "default": false
+          }
+        }
+      },
+	  "special": {
+        "name": "特殊牌型",
+        "type": 1,
+        "components": 
+		{
+		  "type1": {
+            "name": "四张5、四张A",
+            "paraName": "four5A",
+            "default": true
+          },
+		  "type2": {
+            "name": "全对全连、全黑全红、全大全小",
+            "paraName": "allSame",
+            "default": true
+          },
+		  "type3": {
+            "name": "A可算小",
+            "paraName": "ACanBeSmall",
+            "default": false
+          }
+        }
+      },
+      "play": {
+        "name": "玩法选择",
+        "type": 1,
+        "components": 
+		{
+		  "play1": {
+            "name": "三带一",
+            "paraName": "threeAndOne",
+            "default": true
+          },
+		  "play2": {
+            "name": "三带二",
+            "paraName": "threeAndTwo",
+            "default": true
+          },
+		  "play3": {
+            "name": "四带二",
+            "paraName": "fourAndTwo",
+            "default": false
+          },
+		  "play4": {
+            "name": "飞机不可带",
+            "paraName": "noWingAircraft",
+            "default": false
+          },
+		  "play5": {
+            "name": "下家报单必出多张",
+            "paraName": "forceNoSingle",
+            "default": true
+          }
+        }
+      },
+	  "rule": {
+        "name": "规则",
+        "type": 0,
+        "paraName": "banType",
+        "components": {
+          "round1": {
+            "name": "单板",
+            "value": "1",
+            "default": true
+          },
+          "round2": {
+            "name": "双板",
+            "value": "2",
+            "default": false
+          },
+          "round3": {
+            "name": "多板",
+            "value": "3",
+            "default": false
+          }
+        }
+      }
+    }
+  }
+    
+}
